@@ -50,4 +50,16 @@ class InertiaTestController extends Controller
         ]);
     }
 
+    public function delete($id)
+    {
+        $book = InertiaTest::findOrFail($id);
+        $book->delete();
+        
+
+        return to_route('inertia.index')
+        ->with([
+            'message' => '削除しました。'
+        ]);
+    }
+
 }
