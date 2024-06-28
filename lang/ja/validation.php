@@ -166,6 +166,8 @@ return [
 
         'title' => '件名',
         'content' => '本文',
+        'memo' => 'メモ',
+        'price' => '料金',
     ],
 
 ];
